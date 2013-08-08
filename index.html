@@ -1,0 +1,35 @@
+<html>
+
+<head>
+<title>Apple/Safari Tab Sleep Test</title>
+
+<script>
+
+<script>
+var startTime = new Date();
+
+var updateCounter = function () {
+    var displayArea = document.getElementById("counter");
+    var currentTime = new Date();
+    var differenceInSeconds = Math.round((currentTime - startTime) / 1000, 0);
+    displayArea.innerHTML = differenceInSeconds ;
+	
+	if( differenceInSeconds > 30){
+		location.href = "./page2.html";
+	}
+}
+
+window.setInterval(updateCounter, 1000);
+</script>
+</script>
+
+</head>
+
+<body>
+	<div id="counter"></div>
+	<input type="button" value="Hello"></input>
+
+</body>
+
+
+</html>
